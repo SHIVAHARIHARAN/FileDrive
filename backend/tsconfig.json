@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    /* 🔹 Basic Setup */
+    "target": "ES6",
+    "module": "commonjs",
+
+    /* 🔹 Folder Structure */
+    "rootDir": "./src",
+    "outDir": "./dist",
+
+    /* 🔹 Strict Type Checking */
+    "strict": true,
+
+    /* 🔹 Node Compatibility */
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true,
+
+    /* 🔹 Types */
+    "types": ["node"],
+
+    /* 🔹 Debugging */
+    "sourceMap": true
+  },
+
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
