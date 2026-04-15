@@ -26,7 +26,7 @@ const fileSchema = new Schema<IFile>({
     },
     fileUrl:{
         type:String,
-        defa1ult:"",
+        default:"",
     }
 },{timestamps:true}
 );

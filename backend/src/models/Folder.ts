@@ -2,6 +2,7 @@ import mongoose , {Document , Schema , Types } from "mongoose";
 export interface IFolder extends Document{
     name:string;
     userId:Types.ObjectId;
+    parentFolderId?:Types.ObjectId;
     createdAt?:Date;
     updatedAt?:Date;
 }      
@@ -15,7 +16,13 @@ const folderSchema=new Schema<IFolder>({
         type:Schema.Types.ObjectId,
         ref:"User", 
         required:true,
-    }
+    },
+    parentFolderId:{
+        type:Schema.Types.ObjectId,
+        ref:"Folder",
+        default:null,
+    },
+    
 },{timestamps:true}
 );
 
